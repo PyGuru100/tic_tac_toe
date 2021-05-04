@@ -24,7 +24,7 @@ def get_anti_diagonal(square_array: list):
     assert len(square_array) == len(square_array[0]), "Matrix length != matrix width!"
     a_di = []
     s = len(square_array)
-    for r in range(len(square_array)):
+    for r in range(s):
         a_di.append(square_array[r][s - 1 - r])
     return a_di
 
