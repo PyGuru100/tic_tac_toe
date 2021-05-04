@@ -71,6 +71,7 @@ class Player:
         return False
 
     def play(self, row_entered, col_entered):
+        # because humans count from 1
         row_entered -= 1
         col_entered -= 1
         if not (0 <= row_entered < self.grid.rows) or not (0 <= col_entered < self.grid.cols):
