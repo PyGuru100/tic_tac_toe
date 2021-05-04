@@ -41,7 +41,9 @@ class Grid:
             for c in range(self.cols):
                 string += self.symbols[r][c] + " | "
             string = string[:-3]
+            # because the last ' | ' would make it look like ass.
             string += "\n"
+            # because the last \n isn't needed.
         return string[:-1]
 
 
